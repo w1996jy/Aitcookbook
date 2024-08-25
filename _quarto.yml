@@ -10,6 +10,7 @@ book:
   favicon: assets/favicon.ico
   downloads: [pdf, docx]
   search: true
+  
   author:
     - name: Junyue Wang
       affiliations:
