@@ -26,8 +26,8 @@ book:
           department: SState Key Laboratory of Crop Stress Adaptation and Improvement
   chapters:
     - index.qmd
-    - content/setup.qmd
-    - content/add-content.qmd
+    - content/introduce.qmd
+    - content/installation.qmd
     - content/customizing.qmd
     - content/rendering.qmd
     - content/rmarkdown.Rmd
@@ -40,7 +40,7 @@ book:
     left: "&copy; CC-1.0"
   
   sidebar:
-    background: "#D9E3E4"
+    background: "#FCD581"
     logo: "https://raw.githubusercontent.com/nmfs-opensci/assets/main/logo/nmfs-opensci-logo3.png"
     favicon: images/favicon.ico
     pinned: true
