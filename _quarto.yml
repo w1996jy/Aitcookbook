@@ -25,6 +25,7 @@ book:
       affiliations:
         - name: Henan University
           department: SState Key Laboratory of Crop Stress Adaptation and Improvement
+  
   chapters:
     - index.qmd
     - content/introduce.qmd
