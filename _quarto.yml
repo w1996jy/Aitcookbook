@@ -30,6 +30,21 @@ book:
     - index.qmd
     - content/introduce.qmd
     - content/installation.qmd
+    - content/analyse/analyse.qmd
+    chapters:
+      - content/analyse/Merge_File.qmd
+      - content/analyse/Correlation_Analysis.qmd
+      - content/analyse/Descriptive_Statistics.qmd
+      - content/analyse/DESeq2.qmd
+    chapters:
+      - content/plot/plot.qmd
+      - content/plot/Bar.qmd
+      - content/plot/Venn.qmd
+      - content/plot/Enrichment_Bubble.qmd
+      - content/plot/Volcano_Plot.qmd
+      - content/plot/Wordcloud_Plot.qmd
+      - content/plot/Histogram.qmd
+      - content/plot/PCA.qmd
 
   page-footer:
     right: "This page is built with [Quarto](https://quarto.org/)."
