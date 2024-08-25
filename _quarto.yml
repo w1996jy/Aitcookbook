@@ -35,19 +35,17 @@ book:
   
   sidebar:
     background: "#FCD581"
-    logo: "https://raw.githubusercontent.com/nmfs-opensci/assets/main/logo/nmfs-opensci-logo3.png"
+    logo: "https://github.com/w1996jy/Aitcookbook/blob/main/assets/logo.png?raw=true"
     favicon: images/favicon.ico
     pinned: true
     align: center
     tools: 
       - icon: globe
-        href: https://nmfs-opensci.github.io
-        text: "NMFS Open Science"
+        href: https://w1996jy.github.io
+        text: "Open Science"
     style: "docked"
     search: true
     collapse-level: 1
-
-bibliography: [content/references.bib]
 
 execute:
   echo: false
