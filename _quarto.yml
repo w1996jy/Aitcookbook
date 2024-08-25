@@ -3,7 +3,7 @@ project:
 
 book: 
   page-navigation: true
-  title: "NOAA quarto book" 
+  title: "Ait cookbook" 
   site-url: "https://w1996jy.github.io/Aitcookbook" 
   repo-url: "https://github.com/w1996jy/Aitcookbook"
   repo-actions: [edit, source, issue]
