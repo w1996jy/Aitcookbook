@@ -28,12 +28,6 @@ book:
     - index.qmd
     - content/introduce.qmd
     - content/installation.qmd
-    - content/customizing.qmd
-    - content/rendering.qmd
-    - content/rmarkdown.Rmd
-    - content/code.qmd
-    - content/adding-refs.qmd
-    - content/references.qmd
 
   page-footer:
     right: "This page is built with [Quarto](https://quarto.org/)."
