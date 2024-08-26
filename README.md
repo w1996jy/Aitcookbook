@@ -1,6 +1,6 @@
 ### Cookbook of Ait
 
-[![R version](https://img.shields.io/badge/R-v4.1.1-salmon)](https://www.r-project.org)
+[![R version](https://img.shields.io/badge/R-v4.3.0-salmon)](https://www.r-project.org)
 
 ### up-to-date cookbook
 
