@@ -1,1 +1,9 @@
 # Enrichment_Bubble
+
+# Demo data
+
+[enrichment_result.csv](https://github.com/w1996jy/Aitdemodata/blob/main/enrichment_result.csv)
+
+# Use
+
+[![](https://github.com/w1996jy/Aitdemodata/blob/main/pic/Enrichment_Bubble_Plot.png?raw=true)](https://github.com/w1996jy/Aitdemodata/blob/main/pic/Enrichment_Bubble_Plot.png?raw=true)
