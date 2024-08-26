@@ -1,1 +1,9 @@
 # Descriptive Statistics
+
+# Demo data
+
+[Cor_demo.csv](https://github.com/w1996jy/Aitdemodata/blob/main/Cor_demo.csv)
+
+# Use
+
+[![](https://github.com/w1996jy/Aitdemodata/blob/main/pic/Descriptive_Statistics_Analysis.png?raw=true)](https://github.com/w1996jy/Aitdemodata/blob/main/pic/Descriptive_Statistics_Analysis.png?raw=true)
