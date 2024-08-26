@@ -1,1 +1,10 @@
 # DESeq2
+
+# Demo data
+
+[count.csv](https://github.com/w1996jy/Aitdemodata/blob/main/count.csv) <br>
+[sample_group.csv](https://github.com/w1996jy/Aitdemodata/blob/main/sample_group.csv)
+
+# Use
+
+[![](https://github.com/w1996jy/Aitdemodata/blob/main/pic/%20DESeq2_Analysis.png?raw=true)](https://github.com/w1996jy/Aitdemodata/blob/main/pic/%20DESeq2_Analysis.png?raw=true)
