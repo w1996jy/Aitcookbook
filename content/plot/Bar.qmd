@@ -1,1 +1,9 @@
 # Bar
+
+# Demo data
+
+[Bar_data.csv](https://github.com/w1996jy/Aitdemodata/blob/main/Bar_data.csv)
+
+# Use
+
+[![](https://github.com/w1996jy/Aitdemodata/blob/main/pic/bar.png?raw=true)](https://github.com/w1996jy/Aitdemodata/blob/main/pic/bar.png?raw=true)
