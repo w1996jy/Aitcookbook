@@ -1,1 +1,11 @@
 # PCA
+
+# Demo data
+
+[PCA_infile.csv](https://github.com/w1996jy/Aitdemodata/blob/main/PCA_infile.csv)
+<br>
+[PCA_groupfile.csv](https://github.com/w1996jy/Aitdemodata/blob/main/PCA_groupfile.csv)
+
+# Use
+
+[![](https://github.com/w1996jy/Aitdemodata/blob/main/pic/pca.png?raw=true)](https://github.com/w1996jy/Aitdemodata/blob/main/pic/pca.png?raw=true)
