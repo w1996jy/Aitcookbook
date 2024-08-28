@@ -1,1 +1,9 @@
 # Histogram
+
+# Demo data
+
+[histogramDemo.csv](https://github.com/w1996jy/Aitdemodata/blob/main/histogramDemo.csv)
+
+# Use
+
+[![](https://github.com/w1996jy/Aitdemodata/blob/main/pic/histogram.png?raw=true)](https://github.com/w1996jy/Aitdemodata/blob/main/pic/histogram.png?raw=true)
