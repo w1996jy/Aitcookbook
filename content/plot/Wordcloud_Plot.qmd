@@ -1,1 +1,9 @@
 # Wordcloud_Plot
+
+# Demo data
+
+[wordcloud2Demo.csv](https://github.com/w1996jy/Aitdemodata/blob/main/wordcloud2Demo.csv)
+
+# Use
+
+[![](https://github.com/w1996jy/Aitdemodata/blob/main/pic/wordcloud.png?raw=true)](https://github.com/w1996jy/Aitdemodata/blob/main/pic/wordcloud.png?raw=true)
