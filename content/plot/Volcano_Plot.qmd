@@ -1,1 +1,9 @@
 # Volcano_Plot
+
+# Demo data
+
+[VolcanoPlotDemo.csv](https://github.com/w1996jy/Aitdemodata/blob/main/VolcanoPlotDemo.csv)
+
+# Use
+
+[![](https://github.com/w1996jy/Aitdemodata/blob/main/pic/volcanoplot.png?raw=true)](https://github.com/w1996jy/Aitdemodata/blob/main/pic/volcanoplot.png?raw=true)
