@@ -1,3 +1,20 @@
+---
+title: "Ait cookbook"
+authors:
+  - name: "Junyue Wang"
+    affiliations:
+        - name: Shandong Agricultural University
+          department: State Key Laboratory of Crop Biology, College of Agronomic Sciences
+  - name: "Fei Liang"
+    affiliations:
+        - name: Henan University
+          department: State Key Laboratory of Crop Stress Adaptation and Improvement
+  - name: "M. Waqar Khan"
+    affiliations:
+        - name: Henan University
+          department: State Key Laboratory of Crop Stress Adaptation and Improvement
+---
+
 # Introduce {.unnumbered}
 
 Analytical Integration Tool (Ait) is an integrated analysis tool that includes data analysis, plotting, sequence operations......
