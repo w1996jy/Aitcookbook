@@ -2,7 +2,7 @@
 
 [![R version](https://img.shields.io/badge/R-v4.3.0-salmon)](https://www.r-project.org)
 
-### up-to-date cookbook
+### Ait cookbook link
 
 [Ait cookbook](https://w1996jy.github.io/Aitcookbook/)
 
