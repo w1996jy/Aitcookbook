@@ -29,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../content/analyse/Mfuzz.html" rel="next">
-<link href="../../content/analyse/Descriptive_Statistics.html" rel="prev">
+<link href="../../content/plot/plot.html" rel="next">
+<link href="../../content/analyse/DESeq2.html" rel="prev">
 <link href="../../images/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/analyse/analyse.html">Analyse</a></li><li class="breadcrumb-item"><a href="../../content/analyse/DESeq2.html">DESeq2</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/analyse/analyse.html">Analyse</a></li><li class="breadcrumb-item"><a href="../../content/analyse/Mfuzz.html">Mfuzz</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -154,13 +154,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/analyse/DESeq2.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../content/analyse/DESeq2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">DESeq2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/analyse/Mfuzz.html" class="sidebar-item-text sidebar-link">
+  <a href="../../content/analyse/Mfuzz.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Mfuzz</span></a>
   </div>
 </li>
@@ -265,14 +265,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#deseq2" id="toc-deseq2" class="nav-link active" data-scroll-target="#deseq2">DESeq2</a></li>
-  <li><a href="#demo-data" id="toc-demo-data" class="nav-link" data-scroll-target="#demo-data">Demo data</a></li>
-  <li><a href="#use" id="toc-use" class="nav-link" data-scroll-target="#use">Use</a>
+  <li><a href="#mfuzz" id="toc-mfuzz" class="nav-link active" data-scroll-target="#mfuzz">Mfuzz</a></li>
+  <li><a href="#demo-data" id="toc-demo-data" class="nav-link" data-scroll-target="#demo-data">Demo data</a>
   <ul class="collapse">
-  <li><a href="#instructions-for-using-the-deseq2-analysis-shiny-application" id="toc-instructions-for-using-the-deseq2-analysis-shiny-application" class="nav-link" data-scroll-target="#instructions-for-using-the-deseq2-analysis-shiny-application">Instructions for Using the DESeq2 Analysis Shiny Application</a></li>
+  <li><a href="#instructions-for-using-the-mfuzz-clustering-shiny-application" id="toc-instructions-for-using-the-mfuzz-clustering-shiny-application" class="nav-link" data-scroll-target="#instructions-for-using-the-mfuzz-clustering-shiny-application">Instructions for Using the Mfuzz Clustering Shiny Application</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/w1996jy/edit/main/content/analyse/DESeq2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/w1996jy/blob/main/content/analyse/DESeq2.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/w1996jy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/w1996jy/edit/main/content/analyse/Mfuzz.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/w1996jy/blob/main/content/analyse/Mfuzz.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/w1996jy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -280,73 +279,70 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="deseq2" class="level1">
-<h1>DESeq2</h1>
+<section id="mfuzz" class="level1">
+<h1>Mfuzz</h1>
 </section>
 <section id="demo-data" class="level1">
 <h1>Demo data</h1>
-<p><a href="https://github.com/w1996jy/Aitdemodata/blob/main/count.csv">count.csv</a> <br> <a href="https://github.com/w1996jy/Aitdemodata/blob/main/sample_group.csv">sample_group.csv</a></p>
-</section>
-<section id="use" class="level1">
-<h1>Use</h1>
-<section id="instructions-for-using-the-deseq2-analysis-shiny-application" class="level3">
-<h3 class="anchored" data-anchor-id="instructions-for-using-the-deseq2-analysis-shiny-application">Instructions for Using the DESeq2 Analysis Shiny Application</h3>
+<p><a href="https://github.com/w1996jy/Aitdemodata/blob/main/MfuzzDemo.csv">MfuzzDemo.csv</a> <br></p>
+<section id="instructions-for-using-the-mfuzz-clustering-shiny-application" class="level3">
+<h3 class="anchored" data-anchor-id="instructions-for-using-the-mfuzz-clustering-shiny-application">Instructions for Using the Mfuzz Clustering Shiny Application</h3>
 <section id="upload-data" class="level4">
 <h4 class="anchored" data-anchor-id="upload-data">1. <strong>Upload Data</strong></h4>
 <ul>
-<li><strong>Upload Count Data</strong>:
+<li><strong>CSV File</strong>:
 <ul>
-<li>Click the “Upload count data (CSV)” button to select and upload a CSV file with count data. The file should include counts of genes or features across samples.</li>
-</ul></li>
-<li><strong>Upload Metadata</strong>:
-<ul>
-<li>Click the “Upload metadata (CSV)” button to select and upload a CSV file with metadata. This file should include a column named “Condition” that specifies the condition or group for each sample.</li>
+<li>Click the “Upload CSV File” button to select and upload a CSV file containing your gene expression data.</li>
 </ul></li>
 </ul>
 </section>
-<section id="run-deseq2-analysis" class="level4">
-<h4 class="anchored" data-anchor-id="run-deseq2-analysis">2. <strong>Run DESeq2 Analysis</strong></h4>
+<section id="set-clustering-parameters" class="level4">
+<h4 class="anchored" data-anchor-id="set-clustering-parameters">2. <strong>Set Clustering Parameters</strong></h4>
 <ul>
-<li><strong>Run DESeq2 Analysis</strong>:
+<li><strong>Number of Clusters</strong>:
 <ul>
-<li>Click the “Run DESeq2 Analysis” button to perform differential expression analysis using DESeq2. The application will process the data and generate the results.</li>
+<li>Specify the number of clusters for the analysis. The default is set to 6, but you can choose any number based on your dataset.</li>
+</ul></li>
+<li><strong>Fuzziness (m)</strong>:
+<ul>
+<li>Adjust the fuzziness parameter (<code>m</code>). The default is set to 1.25, and you can fine-tune it as needed. A higher value means more overlap between clusters.</li>
 </ul></li>
 </ul>
 </section>
-<section id="view-results" class="level4">
-<h4 class="anchored" data-anchor-id="view-results">3. <strong>View Results</strong></h4>
+<section id="run-the-clustering-algorithm" class="level4">
+<h4 class="anchored" data-anchor-id="run-the-clustering-algorithm">3. <strong>Run the Clustering Algorithm</strong></h4>
 <ul>
-<li><strong>Results Table</strong>:
+<li><strong>Run Clustering</strong>:
 <ul>
-<li>After running the analysis, a table displaying the DESeq2 results will appear in the main panel. This table includes metrics such as log2 fold change and p-values for each gene or feature.</li>
+<li>Click the “Run Clustering” button to execute the Mfuzz clustering algorithm. This will preprocess your data, estimate the fuzziness, and cluster the data.</li>
 </ul></li>
-<li><strong>Volcano Plot</strong>:
+</ul>
+</section>
+<section id="visualize-the-results" class="level4">
+<h4 class="anchored" data-anchor-id="visualize-the-results">4. <strong>Visualize the Results</strong></h4>
 <ul>
-<li>A volcano plot visualizing the relationship between log2 fold change and p-value will be displayed. This plot highlights significant genes based on specified thresholds.</li>
+<li><strong>Mfuzz Plot</strong>:
+<ul>
+<li>After running the clustering, the resulting plot will be displayed in the main panel. The plot shows the soft clustering of genes into the specified number of clusters.</li>
 </ul></li>
-<li><strong>Heatmap</strong>:
+<li><strong>Cluster Summary</strong>:
 <ul>
-<li>A heatmap of the top 20 most variable genes will be shown. This heatmap visualizes the expression patterns across samples.</li>
+<li>A summary of the clustering results will appear below the plot, indicating how many genes were assigned to each cluster.</li>
 </ul></li>
 </ul>
 </section>
 <section id="download-results" class="level4">
-<h4 class="anchored" data-anchor-id="download-results">4. <strong>Download Results</strong></h4>
+<h4 class="anchored" data-anchor-id="download-results">5. <strong>Download Results</strong></h4>
 <ul>
-<li><strong>Download Results Table</strong>:
+<li><strong>Download Cluster Table</strong>:
 <ul>
-<li>Click the “Download Results” button to save the DESeq2 results table as a CSV file on your local system.</li>
+<li>Click the “Download Cluster table” button to download the clustering results as a text file. The file will contain cluster assignments for each gene.</li>
 </ul></li>
-<li><strong>Download Volcano Plot</strong>:
+<li><strong>Download Plot (PDF)</strong>:
 <ul>
-<li>Click the “Download Volcano Plot” button to save the volcano plot. You can select the format (PDF, PNG, JPG, SVG) for the downloaded plot.</li>
-</ul></li>
-<li><strong>Download Heatmap</strong>:
-<ul>
-<li>Click the “Download Heatmap” button to save the heatmap. Choose the desired format (PDF, PNG, JPG, SVG) for the downloaded image.</li>
+<li>Click the “Download PDF” button to save the clustering plot as a PDF file.</li>
 </ul></li>
 </ul>
-<p><a href="https://github.com/w1996jy/Aitdemodata/blob/main/pic/%20DESeq2_Analysis.png?raw=true"><img src="https://github.com/w1996jy/Aitdemodata/blob/main/pic/%20DESeq2_Analysis.png?raw=true" class="img-fluid"></a></p>
 
 
 </section>
@@ -909,13 +905,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../content/analyse/Descriptive_Statistics.html" class="pagination-link" aria-label="Descriptive Statistics">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Descriptive Statistics</span>
+      <a href="../../content/analyse/DESeq2.html" class="pagination-link" aria-label="DESeq2">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">DESeq2</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../content/analyse/Mfuzz.html" class="pagination-link" aria-label="Mfuzz">
-        <span class="nav-page-text">Mfuzz</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../content/plot/plot.html" class="pagination-link" aria-label="plot">
+        <span class="nav-page-text">plot</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -927,7 +923,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/w1996jy/edit/main/content/analyse/DESeq2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/w1996jy/blob/main/content/analyse/DESeq2.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/w1996jy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/w1996jy/edit/main/content/analyse/Mfuzz.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/w1996jy/blob/main/content/analyse/Mfuzz.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/w1996jy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a></p>
 </div>
