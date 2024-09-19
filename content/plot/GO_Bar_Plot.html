@@ -29,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../content/plot/Histogram.html" rel="next">
-<link href="../../content/plot/Volcano_Plot.html" rel="prev">
+<link href="../../content/plot/OPLS_DA_Analyse.html" rel="next">
+<link href="../../content/plot/UpSetR.html" rel="prev">
 <link href="../../images/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/plot/plot.html">plot</a></li><li class="breadcrumb-item"><a href="../../content/plot/Wordcloud_Plot.html">Wordcloud_Plot</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/plot/plot.html">plot</a></li><li class="breadcrumb-item"><a href="../../content/plot/GO_Bar_Plot.html">GO_Bar_Plot</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -201,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/plot/Wordcloud_Plot.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../content/plot/Wordcloud_Plot.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Wordcloud_Plot</span></a>
   </div>
 </li>
@@ -231,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/plot/GO_Bar_Plot.html" class="sidebar-item-text sidebar-link">
+  <a href="../../content/plot/GO_Bar_Plot.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">GO_Bar_Plot</span></a>
   </div>
 </li>
@@ -265,14 +265,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#wordcloud_plot" id="toc-wordcloud_plot" class="nav-link active" data-scroll-target="#wordcloud_plot">Wordcloud_Plot</a></li>
-  <li><a href="#demo-data" id="toc-demo-data" class="nav-link" data-scroll-target="#demo-data">Demo data</a></li>
-  <li><a href="#use" id="toc-use" class="nav-link" data-scroll-target="#use">Use</a>
-  <ul class="collapse">
-  <li><a href="#instructions-for-using-the-word-cloud-shiny-application" id="toc-instructions-for-using-the-word-cloud-shiny-application" class="nav-link" data-scroll-target="#instructions-for-using-the-word-cloud-shiny-application">Instructions for Using the Word Cloud Shiny Application</a></li>
-  </ul></li>
+  <li><a href="#go_bar_plot" id="toc-go_bar_plot" class="nav-link active" data-scroll-target="#go_bar_plot">GO_Bar_Plot</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/w1996jy/edit/main/content/plot/Wordcloud_Plot.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/w1996jy/blob/main/content/plot/Wordcloud_Plot.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/w1996jy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/w1996jy/edit/main/content/plot/GO_Bar_Plot.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/w1996jy/blob/main/content/plot/GO_Bar_Plot.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/w1996jy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -280,67 +275,10 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="wordcloud_plot" class="level1">
-<h1>Wordcloud_Plot</h1>
-</section>
-<section id="demo-data" class="level1">
-<h1>Demo data</h1>
-<p><a href="https://github.com/w1996jy/Aitdemodata/blob/main/wordcloud2Demo.csv">wordcloud2Demo.csv</a></p>
-</section>
-<section id="use" class="level1">
-<h1>Use</h1>
-<section id="instructions-for-using-the-word-cloud-shiny-application" class="level3">
-<h3 class="anchored" data-anchor-id="instructions-for-using-the-word-cloud-shiny-application">Instructions for Using the Word Cloud Shiny Application</h3>
-<section id="upload-data" class="level4">
-<h4 class="anchored" data-anchor-id="upload-data">1. <strong>Upload Data</strong></h4>
-<ul>
-<li><strong>Choose a CSV File</strong>:
-<ul>
-<li>Click the “Choose a CSV File” button to upload your data file. The file should contain a column named “word” with the words you want to visualize in the word cloud.</li>
-</ul></li>
-</ul>
-</section>
-<section id="set-options" class="level4">
-<h4 class="anchored" data-anchor-id="set-options">2. <strong>Set Options</strong></h4>
-<ul>
-<li><strong>Remove Numbers</strong>:
-<ul>
-<li>Check the box labeled “Remove Numbers” if you want to exclude numbers from the words in the word cloud.</li>
-</ul></li>
-<li><strong>Select File Format</strong>:
-<ul>
-<li>Choose the desired output format for the word cloud from the dropdown menu. Options include “PNG” and “HTML”.</li>
-</ul></li>
-<li><strong>Image Dimensions</strong>:
-<ul>
-<li>Set the desired width and height for the word cloud image:
-<ul>
-<li><strong>Image Width</strong>: Enter a value (default is 800).</li>
-<li><strong>Image Height</strong>: Enter a value (default is 600).</li>
-</ul></li>
-</ul></li>
-</ul>
-</section>
-<section id="generate-the-word-cloud" class="level4">
-<h4 class="anchored" data-anchor-id="generate-the-word-cloud">3. <strong>Generate the Word Cloud</strong></h4>
-<ul>
-<li>The word cloud will be automatically generated based on the uploaded data and your selected options. It will be displayed in the main panel.</li>
-</ul>
-</section>
-<section id="download-the-word-cloud" class="level4">
-<h4 class="anchored" data-anchor-id="download-the-word-cloud">4. <strong>Download the Word Cloud</strong></h4>
-<ul>
-<li><strong>Download Options</strong>:
-<ul>
-<li>Click the “Download Word Cloud” button to save the generated word cloud in your chosen format (PNG or HTML).</li>
-</ul></li>
-</ul>
-<p>By following these steps, you can easily create and download a customized word cloud using the Shiny application.</p>
-<p><a href="https://github.com/w1996jy/Aitdemodata/blob/main/pic/wordcloud.png?raw=true"><img src="https://github.com/w1996jy/Aitdemodata/blob/main/pic/wordcloud.png?raw=true" class="img-fluid"></a></p>
+<section id="go_bar_plot" class="level1">
+<h1>GO_Bar_Plot</h1>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -899,13 +837,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../content/plot/Volcano_Plot.html" class="pagination-link" aria-label="Volcano_Plot">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Volcano_Plot</span>
+      <a href="../../content/plot/UpSetR.html" class="pagination-link" aria-label="UpSetR">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">UpSetR</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../content/plot/Histogram.html" class="pagination-link" aria-label="Histogram">
-        <span class="nav-page-text">Histogram</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../content/plot/OPLS_DA_Analyse.html" class="pagination-link" aria-label="OPLS_DA_Analyse">
+        <span class="nav-page-text">OPLS_DA_Analyse</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -917,7 +855,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/w1996jy/edit/main/content/plot/Wordcloud_Plot.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/w1996jy/blob/main/content/plot/Wordcloud_Plot.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/w1996jy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/w1996jy/edit/main/content/plot/GO_Bar_Plot.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/w1996jy/blob/main/content/plot/GO_Bar_Plot.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/w1996jy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a></p>
 </div>
