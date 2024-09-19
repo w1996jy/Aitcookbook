@@ -220,7 +220,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/plot/Correlation_Analysis_of_Two_Traits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Correlation_Analysis_of_Two_Traits</span></a>
+ <span class="menu-text">Correlation Analysis of Two Traits</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -266,6 +266,11 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#upsetr" id="toc-upsetr" class="nav-link active" data-scroll-target="#upsetr">UpSetR</a></li>
+  <li><a href="#demo-data" id="toc-demo-data" class="nav-link" data-scroll-target="#demo-data">Demo data</a></li>
+  <li><a href="#use" id="toc-use" class="nav-link" data-scroll-target="#use">Use</a>
+  <ul class="collapse">
+  <li><a href="#instructions-for-using-the-upsetr-visualization-shiny-application" id="toc-instructions-for-using-the-upsetr-visualization-shiny-application" class="nav-link" data-scroll-target="#instructions-for-using-the-upsetr-visualization-shiny-application">Instructions for Using the UpSetR Visualization Shiny Application</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/w1996jy/edit/main/content/plot/UpSetR.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/w1996jy/blob/main/content/plot/UpSetR.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/w1996jy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -277,8 +282,63 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="upsetr" class="level1">
 <h1>UpSetR</h1>
+</section>
+<section id="demo-data" class="level1">
+<h1>Demo data</h1>
+<p><a href="https://github.com/w1996jy/Aitdemodata/blob/main/veen.csv">veen.csv</a></p>
+</section>
+<section id="use" class="level1">
+<h1>Use</h1>
+<section id="instructions-for-using-the-upsetr-visualization-shiny-application" class="level3">
+<h3 class="anchored" data-anchor-id="instructions-for-using-the-upsetr-visualization-shiny-application">Instructions for Using the UpSetR Visualization Shiny Application</h3>
+<section id="upload-data" class="level4">
+<h4 class="anchored" data-anchor-id="upload-data">1. <strong>Upload Data</strong></h4>
+<ul>
+<li><strong>Upload CSV File</strong>:
+<ul>
+<li>Click the “Upload CSV File” button to select and upload a CSV file. The CSV file should contain at least two columns, representing different sets for the UpSetR analysis.</li>
+</ul></li>
+</ul>
+</section>
+<section id="set-plot-dimensions" class="level4">
+<h4 class="anchored" data-anchor-id="set-plot-dimensions">2. <strong>Set Plot Dimensions</strong></h4>
+<ul>
+<li><strong>Width (in inches)</strong>:
+<ul>
+<li>Use the numeric input to set the width of the plot in inches.</li>
+</ul></li>
+<li><strong>Height (in inches)</strong>:
+<ul>
+<li>Use the numeric input to set the height of the plot in inches.</li>
+</ul></li>
+</ul>
+</section>
+<section id="download-options" class="level4">
+<h4 class="anchored" data-anchor-id="download-options">3. <strong>Download Options</strong></h4>
+<ul>
+<li><strong>Download Plot</strong>:
+<ul>
+<li>Once the plot is generated, click the “Download Plot” button to save the UpSetR visualization as a PDF file. The downloaded plot will have the dimensions set by the width and height inputs.</li>
+</ul></li>
+<li><strong>Download Data</strong>:
+<ul>
+<li>After processing the uploaded data, click the “Download Data” button to download the processed data as a CSV file. This CSV will contain binary values indicating membership in different sets.</li>
+</ul></li>
+</ul>
+</section>
+<section id="view-plot" class="level4">
+<h4 class="anchored" data-anchor-id="view-plot">4. <strong>View Plot</strong></h4>
+<ul>
+<li><strong>Plot Display</strong>:
+<ul>
+<li>The generated UpSetR plot will be displayed in the main panel. This plot helps you visualize the intersections between different sets in the uploaded CSV file.</li>
+</ul></li>
+</ul>
+<p><a href="https://github.com/w1996jy/Aitdemodata/blob/main/pic/upsetR.png?raw=true"><img src="https://github.com/w1996jy/Aitdemodata/blob/main/pic/upsetR.png?raw=true" class="img-fluid"></a></p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -837,8 +897,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../content/plot/Correlation_Analysis_of_Two_Traits.html" class="pagination-link" aria-label="Correlation_Analysis_of_Two_Traits">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Correlation_Analysis_of_Two_Traits</span>
+      <a href="../../content/plot/Correlation_Analysis_of_Two_Traits.html" class="pagination-link" aria-label="Correlation Analysis of Two Traits">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Correlation Analysis of Two Traits</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

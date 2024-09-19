@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/plot/plot.html">plot</a></li><li class="breadcrumb-item"><a href="../../content/plot/Correlation_Analysis_of_Two_Traits.html">Correlation_Analysis_of_Two_Traits</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/plot/plot.html">plot</a></li><li class="breadcrumb-item"><a href="../../content/plot/Correlation_Analysis_of_Two_Traits.html">Correlation Analysis of Two Traits</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -220,7 +220,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/plot/Correlation_Analysis_of_Two_Traits.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Correlation_Analysis_of_Two_Traits</span></a>
+ <span class="menu-text">Correlation Analysis of Two Traits</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -265,7 +265,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#correlation_analysis_of_two_traits" id="toc-correlation_analysis_of_two_traits" class="nav-link active" data-scroll-target="#correlation_analysis_of_two_traits">Correlation_Analysis_of_Two_Traits</a></li>
+  <li><a href="#correlation-analysis-of-two-traits" id="toc-correlation-analysis-of-two-traits" class="nav-link active" data-scroll-target="#correlation-analysis-of-two-traits">Correlation Analysis of Two Traits</a></li>
+  <li><a href="#demo-data" id="toc-demo-data" class="nav-link" data-scroll-target="#demo-data">Demo data</a></li>
+  <li><a href="#use" id="toc-use" class="nav-link" data-scroll-target="#use">Use</a>
+  <ul class="collapse">
+  <li><a href="#instructions-for-using-the-correlation-analysis-shiny-application" id="toc-instructions-for-using-the-correlation-analysis-shiny-application" class="nav-link" data-scroll-target="#instructions-for-using-the-correlation-analysis-shiny-application">Instructions for Using the Correlation Analysis Shiny Application</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/w1996jy/edit/main/content/plot/Correlation_Analysis_of_Two_Traits.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/w1996jy/blob/main/content/plot/Correlation_Analysis_of_Two_Traits.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/w1996jy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -275,10 +280,95 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="correlation_analysis_of_two_traits" class="level1">
-<h1>Correlation_Analysis_of_Two_Traits</h1>
+<section id="correlation-analysis-of-two-traits" class="level1">
+<h1>Correlation Analysis of Two Traits</h1>
+</section>
+<section id="demo-data" class="level1">
+<h1>Demo data</h1>
+<p><a href="https://github.com/w1996jy/Aitdemodata/blob/main/corxy.csv">corxy.csv</a></p>
+</section>
+<section id="use" class="level1">
+<h1>Use</h1>
+<section id="instructions-for-using-the-correlation-analysis-shiny-application" class="level3">
+<h3 class="anchored" data-anchor-id="instructions-for-using-the-correlation-analysis-shiny-application">Instructions for Using the Correlation Analysis Shiny Application</h3>
+<section id="upload-data" class="level4">
+<h4 class="anchored" data-anchor-id="upload-data">1. <strong>Upload Data</strong></h4>
+<ul>
+<li><strong>Upload CSV File</strong>:
+<ul>
+<li>Click the “Upload CSV File” button to select and upload a CSV file with at least two numeric columns for correlation analysis.</li>
+</ul></li>
+</ul>
+</section>
+<section id="select-x-and-y-axes" class="level4">
+<h4 class="anchored" data-anchor-id="select-x-and-y-axes">2. <strong>Select X and Y Axes</strong></h4>
+<ul>
+<li><strong>X Axis Selection</strong>:
+<ul>
+<li>Use the dropdown menu to select the column from the uploaded CSV file that will be used for the X-axis of the plot.</li>
+</ul></li>
+<li><strong>Y Axis Selection</strong>:
+<ul>
+<li>Use the dropdown menu to select the column for the Y-axis.</li>
+</ul></li>
+</ul>
+</section>
+<section id="customize-plot-appearance" class="level4">
+<h4 class="anchored" data-anchor-id="customize-plot-appearance">3. <strong>Customize Plot Appearance</strong></h4>
+<ul>
+<li><strong>X Axis Title</strong>:
+<ul>
+<li>Enter the title for the X-axis in the text input field.</li>
+</ul></li>
+<li><strong>Y Axis Title</strong>:
+<ul>
+<li>Enter the title for the Y-axis.</li>
+</ul></li>
+<li><strong>Choose Point Color</strong>:
+<ul>
+<li>Use the color picker to select the color for the points in the scatter plot.</li>
+</ul></li>
+<li><strong>Choose Line Color</strong>:
+<ul>
+<li>Use the color picker to select the color for the linear regression line on the plot.</li>
+</ul></li>
+</ul>
+</section>
+<section id="set-download-options" class="level4">
+<h4 class="anchored" data-anchor-id="set-download-options">4. <strong>Set Download Options</strong></h4>
+<ul>
+<li><strong>Download Format</strong>:
+<ul>
+<li>Choose the format in which you want to download the plot (PDF, PNG, JPG, or SVG).</li>
+</ul></li>
+<li><strong>Plot Size</strong>:
+<ul>
+<li>Adjust the width and height (in inches) for the downloadable plot.</li>
+</ul></li>
+</ul>
+</section>
+<section id="download-plot" class="level4">
+<h4 class="anchored" data-anchor-id="download-plot">5. <strong>Download Plot</strong></h4>
+<ul>
+<li><strong>Download Plot</strong>:
+<ul>
+<li>After creating and customizing the plot, click the “Download Plot” button to download the plot in the selected format and size.</li>
+</ul></li>
+</ul>
+</section>
+<section id="view-plot" class="level4">
+<h4 class="anchored" data-anchor-id="view-plot">6. <strong>View Plot</strong></h4>
+<ul>
+<li><strong>Plot Display</strong>:
+<ul>
+<li>The generated plot will be displayed in the main panel. It includes the scatter plot, a linear regression line, and an annotation showing the linear equation and R-squared value.</li>
+</ul></li>
+</ul>
+<p><a href="https://github.com/w1996jy/Aitdemodata/blob/main/pic/Correlation_Analysis_of_Two_Traits.png?raw=true"><img src="https://github.com/w1996jy/Aitdemodata/blob/main/pic/Correlation_Analysis_of_Two_Traits.png?raw=true" class="img-fluid"></a></p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->

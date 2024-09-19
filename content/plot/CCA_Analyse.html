@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/plot/plot.html">plot</a></li><li class="breadcrumb-item"><a href="../../content/plot/CCA_Analyse.html">CCA_Analyse</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/plot/plot.html">plot</a></li><li class="breadcrumb-item"><a href="../../content/plot/CCA_Analyse.html">CCA Analyse</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -220,7 +220,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/plot/Correlation_Analysis_of_Two_Traits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Correlation_Analysis_of_Two_Traits</span></a>
+ <span class="menu-text">Correlation Analysis of Two Traits</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -232,19 +232,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/plot/GO_Bar_Plot.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">GO_Bar_Plot</span></a>
+ <span class="menu-text">GO Bar Plot</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/plot/OPLS_DA_Analyse.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">OPLS_DA_Analyse</span></a>
+ <span class="menu-text">OPLS DA Analyse</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/plot/CCA_Analyse.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">CCA_Analyse</span></a>
+ <span class="menu-text">CCA Analyse</span></a>
   </div>
 </li>
       </ul>
@@ -265,7 +265,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#cca_analyse" id="toc-cca_analyse" class="nav-link active" data-scroll-target="#cca_analyse">CCA_Analyse</a></li>
+  <li><a href="#cca-analyse" id="toc-cca-analyse" class="nav-link active" data-scroll-target="#cca-analyse">CCA Analyse</a></li>
+  <li><a href="#demo-data" id="toc-demo-data" class="nav-link" data-scroll-target="#demo-data">Demo data</a></li>
+  <li><a href="#use" id="toc-use" class="nav-link" data-scroll-target="#use">Use</a>
+  <ul class="collapse">
+  <li><a href="#instructions-for-using-the-cca-canonical-correlation-analysis-shiny-application" id="toc-instructions-for-using-the-cca-canonical-correlation-analysis-shiny-application" class="nav-link" data-scroll-target="#instructions-for-using-the-cca-canonical-correlation-analysis-shiny-application">Instructions for Using the CCA (Canonical Correlation Analysis) Shiny Application</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/w1996jy/edit/main/content/plot/CCA_Analyse.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/w1996jy/blob/main/content/plot/CCA_Analyse.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/w1996jy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -275,10 +280,74 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="cca_analyse" class="level1">
-<h1>CCA_Analyse</h1>
+<section id="cca-analyse" class="level1">
+<h1>CCA Analyse</h1>
+</section>
+<section id="demo-data" class="level1">
+<h1>Demo data</h1>
+<p><a href="https://github.com/w1996jy/Aitdemodata/blob/main/CCA_Demo1.csv">CCA_Demo1.csv</a><br> <a href="https://github.com/w1996jy/Aitdemodata/blob/main/CCA_Demo2.csv">CCA_Demo2.csv</a></p>
+</section>
+<section id="use" class="level1">
+<h1>Use</h1>
+<section id="instructions-for-using-the-cca-canonical-correlation-analysis-shiny-application" class="level3">
+<h3 class="anchored" data-anchor-id="instructions-for-using-the-cca-canonical-correlation-analysis-shiny-application">Instructions for Using the CCA (Canonical Correlation Analysis) Shiny Application</h3>
+<section id="upload-data-files" class="level4">
+<h4 class="anchored" data-anchor-id="upload-data-files">1. <strong>Upload Data Files</strong></h4>
+<ul>
+<li><strong>Upload CSV File1</strong>:
+<ul>
+<li>Click the “Upload CSV File1” button to upload the first dataset for Canonical Correlation Analysis. The CSV file should have variables as columns and observations as rows.</li>
+</ul></li>
+<li><strong>Upload CSV File2</strong>:
+<ul>
+<li>Click the “Upload CSV File2” button to upload the second dataset for Canonical Correlation Analysis. The variables in this file should correspond to the observations in the first file.</li>
+</ul></li>
+</ul>
+</section>
+<section id="customize-plot-dimensions" class="level4">
+<h4 class="anchored" data-anchor-id="customize-plot-dimensions">2. <strong>Customize Plot Dimensions</strong></h4>
+<ul>
+<li><strong>Plot Width (inches)</strong>:
+<ul>
+<li>Set the width of the plot in inches using the numeric input.</li>
+</ul></li>
+<li><strong>Plot Height (inches)</strong>:
+<ul>
+<li>Set the height of the plot in inches using the numeric input.</li>
+</ul></li>
+</ul>
+</section>
+<section id="run-the-cca-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="run-the-cca-analysis">3. <strong>Run the CCA Analysis</strong></h4>
+<ul>
+<li><strong>Run</strong>:
+<ul>
+<li>Click the “Run” button to perform Canonical Correlation Analysis (CCA) on the uploaded datasets. The CCA results will be displayed in a plot within the main panel.</li>
+</ul></li>
+</ul>
+</section>
+<section id="download-the-plot" class="level4">
+<h4 class="anchored" data-anchor-id="download-the-plot">4. <strong>Download the Plot</strong></h4>
+<ul>
+<li><strong>Download PDF</strong>:
+<ul>
+<li>After generating the plot, click the “Download PDF” button to save the CCA plot as a PDF file. The plot will have the dimensions specified in the width and height fields.</li>
+</ul></li>
+</ul>
+</section>
+<section id="view-results" class="level4">
+<h4 class="anchored" data-anchor-id="view-results">5. <strong>View Results</strong></h4>
+<ul>
+<li><strong>CCA Plot</strong>:
+<ul>
+<li>The application will display the CCA plot in the main panel. This plot visualizes the relationships between the variables in the two datasets, with variable labels included for easier interpretation.</li>
+</ul></li>
+</ul>
+<p><a href="https://github.com/w1996jy/Aitdemodata/blob/main/pic/CCA.png?raw=true"><img src="https://github.com/w1996jy/Aitdemodata/blob/main/pic/CCA.png?raw=true" class="img-fluid"></a></p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -837,8 +906,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../content/plot/OPLS_DA_Analyse.html" class="pagination-link" aria-label="OPLS_DA_Analyse">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">OPLS_DA_Analyse</span>
+      <a href="../../content/plot/OPLS_DA_Analyse.html" class="pagination-link" aria-label="OPLS DA Analyse">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">OPLS DA Analyse</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

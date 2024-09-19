@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/plot/plot.html">plot</a></li><li class="breadcrumb-item"><a href="../../content/plot/GO_Bar_Plot.html">GO_Bar_Plot</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/plot/plot.html">plot</a></li><li class="breadcrumb-item"><a href="../../content/plot/GO_Bar_Plot.html">GO Bar Plot</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -220,7 +220,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/plot/Correlation_Analysis_of_Two_Traits.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Correlation_Analysis_of_Two_Traits</span></a>
+ <span class="menu-text">Correlation Analysis of Two Traits</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -232,7 +232,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/plot/GO_Bar_Plot.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">GO_Bar_Plot</span></a>
+ <span class="menu-text">GO Bar Plot</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -265,7 +265,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#go_bar_plot" id="toc-go_bar_plot" class="nav-link active" data-scroll-target="#go_bar_plot">GO_Bar_Plot</a></li>
+  <li><a href="#go-bar-plot" id="toc-go-bar-plot" class="nav-link active" data-scroll-target="#go-bar-plot">GO Bar Plot</a></li>
+  <li><a href="#demo-data" id="toc-demo-data" class="nav-link" data-scroll-target="#demo-data">Demo data</a></li>
+  <li><a href="#use" id="toc-use" class="nav-link" data-scroll-target="#use">Use</a>
+  <ul class="collapse">
+  <li><a href="#instructions-for-using-the-go-bar-plot-shiny-application" id="toc-instructions-for-using-the-go-bar-plot-shiny-application" class="nav-link" data-scroll-target="#instructions-for-using-the-go-bar-plot-shiny-application">Instructions for Using the GO Bar Plot Shiny Application</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/w1996jy/edit/main/content/plot/GO_Bar_Plot.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/w1996jy/blob/main/content/plot/GO_Bar_Plot.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/w1996jy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -275,10 +280,104 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="go_bar_plot" class="level1">
-<h1>GO_Bar_Plot</h1>
+<section id="go-bar-plot" class="level1">
+<h1>GO Bar Plot</h1>
+</section>
+<section id="demo-data" class="level1">
+<h1>Demo data</h1>
+<p><a href="https://github.com/w1996jy/Aitdemodata/blob/main/GO_bar_class_Demo.csv">GO_bar_class_Demo.csv</a></p>
+</section>
+<section id="use" class="level1">
+<h1>Use</h1>
+<section id="instructions-for-using-the-go-bar-plot-shiny-application" class="level3">
+<h3 class="anchored" data-anchor-id="instructions-for-using-the-go-bar-plot-shiny-application">Instructions for Using the GO Bar Plot Shiny Application</h3>
+<section id="upload-data" class="level4">
+<h4 class="anchored" data-anchor-id="upload-data">1. <strong>Upload Data</strong></h4>
+<ul>
+<li><strong>Upload CSV File</strong>:
+<ul>
+<li>Click the “Upload CSV File” button to select and upload a CSV file. The CSV file should contain columns such as <code>Description</code>, <code>Count</code>, and <code>Ontology</code>, which are necessary for generating the GO bar plot.</li>
+</ul></li>
+</ul>
+</section>
+<section id="customize-plot-colors" class="level4">
+<h4 class="anchored" data-anchor-id="customize-plot-colors">2. <strong>Customize Plot Colors</strong></h4>
+<ul>
+<li><strong>Biological Process Color</strong>:
+<ul>
+<li>Use the color picker to select a color for the “Biological Process” category.</li>
+</ul></li>
+<li><strong>Cellular Component Color</strong>:
+<ul>
+<li>Use the color picker to select a color for the “Cellular Component” category.</li>
+</ul></li>
+<li><strong>Molecular Function Color</strong>:
+<ul>
+<li>Use the color picker to select a color for the “Molecular Function” category.</li>
+</ul></li>
+</ul>
+</section>
+<section id="customize-plot-labels" class="level4">
+<h4 class="anchored" data-anchor-id="customize-plot-labels">3. <strong>Customize Plot Labels</strong></h4>
+<ul>
+<li><strong>X Label</strong>:
+<ul>
+<li>Enter the label for the x-axis of the plot.</li>
+</ul></li>
+<li><strong>Y Label</strong>:
+<ul>
+<li>Enter the label for the y-axis (default is “Count”).</li>
+</ul></li>
+<li><strong>Group Label</strong>:
+<ul>
+<li>Enter a label for the group legend that corresponds to different ontology categories.</li>
+</ul></li>
+</ul>
+</section>
+<section id="set-plot-dimensions" class="level4">
+<h4 class="anchored" data-anchor-id="set-plot-dimensions">4. <strong>Set Plot Dimensions</strong></h4>
+<ul>
+<li><strong>Plot Width (inches)</strong>:
+<ul>
+<li>Use the numeric input to set the width of the plot in inches.</li>
+</ul></li>
+<li><strong>Plot Height (inches)</strong>:
+<ul>
+<li>Use the numeric input to set the height of the plot in inches.</li>
+</ul></li>
+</ul>
+</section>
+<section id="generate-the-plot" class="level4">
+<h4 class="anchored" data-anchor-id="generate-the-plot">5. <strong>Generate the Plot</strong></h4>
+<ul>
+<li><strong>Run</strong>:
+<ul>
+<li>Click the “Run” button to generate the GO bar plot based on the uploaded data and selected options.</li>
+</ul></li>
+</ul>
+</section>
+<section id="download-the-plot" class="level4">
+<h4 class="anchored" data-anchor-id="download-the-plot">6. <strong>Download the Plot</strong></h4>
+<ul>
+<li><strong>Download PDF</strong>:
+<ul>
+<li>After generating the plot, click the “Download PDF” button to save the GO bar plot as a PDF file. The downloaded plot will have the dimensions specified by the width and height inputs.</li>
+</ul></li>
+</ul>
+</section>
+<section id="view-plot" class="level4">
+<h4 class="anchored" data-anchor-id="view-plot">7. <strong>View Plot</strong></h4>
+<ul>
+<li><strong>Plot Display</strong>:
+<ul>
+<li>The generated GO bar plot will be displayed in the main panel. The plot shows the counts of GO categories (Biological Process, Cellular Component, and Molecular Function) based on the uploaded CSV data.</li>
+</ul></li>
+</ul>
+<p><a href="https://github.com/w1996jy/Aitdemodata/blob/main/pic/GO_Bar_Plot.png?raw=true"><img src="https://github.com/w1996jy/Aitdemodata/blob/main/pic/GO_Bar_Plot.png?raw=true" class="img-fluid"></a></p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
