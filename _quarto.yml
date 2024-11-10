@@ -42,7 +42,6 @@ book:
       - content/plot/Venn.qmd
       - content/plot/Enrichment_Bubble.qmd
       - content/plot/Volcano_Plot.qmd
-      - content/plot/Wordcloud_Plot.qmd
       - content/plot/Histogram.qmd
       - content/plot/PCA.qmd
 
